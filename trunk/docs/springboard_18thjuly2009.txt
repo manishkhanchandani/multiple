@@ -1,0 +1,139 @@
+google code
+http://code.google.com/hosting/
+
+
+svn link: https://multiple.googlecode.com/svn/trunk/
+naveenkhanchandani
+password: 
+
+Social Networking Site
+
+pagination, 
+
+1. User registration [manali]
+	login, registering, logout, forgot password, change password
+
+2. Friendship Module [yogesh]
+	Add friend, rate friend, invite friend, confirm friend, suggest friends, ignored friends
+
+3. Communities [varuna]
+	Add community, search community, edit community, delete community 
+
+4. Events [jaishree]
+	Add event, edit event, search event, view event, rsvp
+
+5. Gallery [Image, Music, Video, Files] [lalita]
+	add album, add image, edit image, delete image, view image
+
+6. Polls [mahesh]
+	Add polls, edit polls, delete polls, vote on polls
+
+7. Forums (discussion) [ashwini]
+	add post, view post, delete post, adding threads, viewing threads, deleting threads
+
+8. scrapping, [anupama]
+	add message, view message, public or private, delete message
+
+9. profile [shweta]
+	edit profile, search profiles, view profiles
+
+10. blogs [karan]
+	add blog, edit blog, delete blog, add comments, delete comments
+
+11.  banner ads [sandeep]
+	add advertisment, edit, delete, settings
+
+12. Activities [banashree]
+	add activities, view activities
+
+13. Confession board [amit]
+
+14. Life reminder [hrishikesh]
+
+
+
+HTML
+html basic tags are:
+<html>
+	<head>
+		<title>
+			This is title of window.
+		</title>
+	</head>
+	<body>
+		hello world
+	</body>
+</html>
+
+new line is created by tag <br />
+paragraph is created by tag <p></p>
+Header Tag is from h1 to h6, h1 is largest, h6 is smallest
+it starts like <h1> and ends like </h1>
+
+Bold is done by following tags
+<strong> or <b>
+Underline is done by <u>
+Italic is done by <i> or <em>
+
+p or div tags have align property:
+align="left" or align="right" or align="center" or align="justify"
+
+<font size="7">hello world</font>
+<font color="#FF0000">hello world</font>
+<font face="Verdana">hello world</font>
+
+unordered list
+<ul>
+  <li>anytext</li>
+  <li>any text 2</li>
+</ul>
+
+ordered list
+<ol>
+  <li>anytext</li>
+  <li>any text 2</li>
+</ol>
+	
+<a href="http://yahoo.com">any paragarph </a>
+
+for horizontal line we have:
+<hr />
+
+to have email link:
+<a href="mailto:abc@gmail.com">anytext</a>
+
+image tag is given by
+<img src="Balloon.JPG" />
+
+form tag
+<form id="form1" name="form1" method="post" action="">
+</form>
+text box
+<input name="name" type="text" id="name" />
+
+password
+<input name="password" type="password" id="password" />
+
+<form id="form1" name="form1" method="post" action="">
+
+textarea
+<textarea name="description" cols="35" rows="10" id="description"></textarea>
+
+radiobutton
+<input name="gender" type="radio" value="Male" checked="checked" />
+
+checkbox
+<input name="cricket" type="checkbox" id="cricket" value="1" />
+
+select or listbox
+<select name="country" id="country">
+      <option value="India">India</option>
+      <option value="US">US</option>
+      <option value="China">China</option>
+    </select>
+
+to add file field, assign following parameter in form tag
+ enctype="multipart/form-data"
+
+and create file field
+<input type="file" name="file" />
