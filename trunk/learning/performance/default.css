@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0px;
 	padding: 0;
-	background: #000000;
+	background: #ffffff;
 	text-align: justify;
 	font-family:  Tahoma, Arial, Helvetica, sans-serif;
 	font-size: 11px;
@@ -15,11 +15,11 @@ body {
 }
 
 h1, h2, h3 {
-	margin-top: 0;
+	margin-top: 5;
 }
 
 h1 {
-	font-size: 1.6em;
+	font-size: 3em;
 	font-weight: normal;
 }
 
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-	border-bottom: none;
+	border-bottom: 3;
 }
 
 a img {
@@ -80,7 +80,8 @@ img.right {
 }
 
 #logo span {
-	color: #000000;
+	color: yellow;
+	font-size:60px
 }
 
 #logo h1 {
@@ -141,7 +142,8 @@ img.right {
 }
 
 #menu .current_page_item a {
-	color: #5E5034;
+	color: green;
+	font-size:18px
 }
 
 /* Wrapper */
@@ -150,7 +152,7 @@ img.right {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-	background: #EAE1D1;
+	background: blue;
 }
 
 /* Page */
@@ -168,8 +170,8 @@ img.right {
 /* Latest Post */
 
 #latest-post {
-	padding: 20px;
-	border: 1px solid #E7E7E7;
+	padding: 50px;
+	border: 3px solid #E7E7E7;
 }
 
 /* Content */
@@ -196,8 +198,8 @@ img.right {
 }
 
 .title a {
-	border-bottom: none;
-	color: #000000;
+border-bottom:medium none;
+color:red;
 }
 
 .title a:hover {
@@ -240,14 +242,14 @@ img.right {
 
 #sidebar1 {
 	float: left;
-	width: 200px;
-	padding-left: 40px;
-	padding-right: 10px;
+	width: 100px;
+	padding-left: 20px;
+	padding-right: 30px;
 }
 
 #sidebar2 {
 	float: right;
-	width: 200px;
+	width: 100px;
 	padding-right: 40px;
 }
 
@@ -376,8 +378,8 @@ img.right {
 /* Footer */
 
 #footer {
-	width: 1000px;
-	height: 80px;
+	width: 800px;
+	height: 100px;
 	margin: 0 auto;
 	padding: 0 20px;
 	background: url(images/img03.gif) no-repeat center top;
@@ -387,8 +389,8 @@ img.right {
 	margin: 0;
 	padding: 10px 0 0 0;
 	text-align: center;
-	text-transform: uppercase;
-	font-size: smaller;
+	text-transform: lowercase;
+	font-size: large;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
