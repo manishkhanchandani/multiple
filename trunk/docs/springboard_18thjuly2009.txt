@@ -50,6 +50,18 @@ pagination,
 
 14. Life reminder [hrishikesh]
 
+15. Website Sale
+
+16. Real estate website
+
+17. Automobile site
+
+18. Matrimonial site
+
+19. Medical store
+
+20. Business directory
+
 
 
 HTML
