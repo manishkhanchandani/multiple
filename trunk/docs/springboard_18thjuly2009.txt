@@ -149,3 +149,46 @@ to add file field, assign following parameter in form tag
 
 and create file field
 <input type="file" name="file" />
+
+
+
+PHP
+Hypertext Preprocessor
+Personal Home Page
+
+ASP, JSP, Coldfusion, Asp.Net, PHP
+
+PHP is similar c and c++
+
+<?php
+echo "Hello world";
+echo 'hello world';
+
+$name = "Xoriant";
+echo $name;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
