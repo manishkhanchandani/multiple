@@ -168,7 +168,11 @@ $name = "Xoriant";
 echo $name;
 ?>
 
+Create html pages with extension .php, related to your module.
+Create html forms and html text on all the files.
+Create database tables related to your html forms.
 
+Then apply dreamweaver server behaviours to all the pages.
 
 
 
