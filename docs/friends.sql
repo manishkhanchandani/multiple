@@ -1,0 +1,5 @@
+CREATE TABLE `friends` (
+`fid` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`user_id` INT( 11 ) NOT NULL ,
+`friend_id` INT( 11 ) NOT NULL
+) ENGINE = MYISAM 
