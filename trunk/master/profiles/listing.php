@@ -48,19 +48,20 @@ $queryString_rsEdit = sprintf("&totalRows_rsEdit=%d%s", $totalRows_rsEdit, $quer
 </head>
 
 <body>
-<p>Listing of Users</p>
+<h1>Listing of Users</h1>
 <table border="1" cellspacing="0" cellpadding="5">
   <tr>
     <td valign="top"><strong>Image</strong></td>
     <td valign="top"><strong>Personal</strong></td>
     <td valign="top"><strong>Action</strong></td>
   </tr>
-  <tr>
     <?php do { ?>
+  <tr>
       <td valign="top"><img src="../../uploadDir/profiles/original/<?php echo $row_rsEdit['image']; ?>" /></td>
       <td valign="top"><?php echo $row_rsEdit['name']; ?></td>
-      <td valign="top"><a href="profile.php?user_id=<?php echo $row_rsEdit['user_id']; ?>">Detail</a></td>
-      <?php } while ($row_rsEdit = mysql_fetch_assoc($rsEdit)); ?></tr>
+      <td valign="top"><p><a href="profile.php?user_id=<?php echo $row_rsEdit['user_id']; ?>">Detail</a></p>
+      <p><a href="invitation.php?invited_to_id=<?php echo $row_rsEdit['user_id']; ?>">Add As A Friend</a> </p></td></tr>
+      <?php } while ($row_rsEdit = mysql_fetch_assoc($rsEdit)); ?>
 </table>
 <p> Records <?php echo ($startRow_rsEdit + 1) ?> to <?php echo min($startRow_rsEdit + $maxRows_rsEdit, $totalRows_rsEdit) ?> of <?php echo $totalRows_rsEdit ?>
 <table border="0" width="50%" align="center">
