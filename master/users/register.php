@@ -85,6 +85,13 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 
   mysql_select_db($database_conn, $conn);
   $Result1 = mysql_query($insertSQL, $conn) or die(mysql_error());
+}
+if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
+	$uid = mysql_insert_id();
+	$sql = "insert into profile1(user_id) values('".$uid."')";
+	mysql_query($sql) or die(mysql_error());
+	$sql = "insert into profile2(user_id) values('".$uid."')";
+	mysql_query($sql) or die(mysql_error());
 
   $insertGoTo = "register_success.php";
   if (isset($_SERVER['QUERY_STRING'])) {
