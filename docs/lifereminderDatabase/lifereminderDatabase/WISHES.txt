@@ -1,0 +1,8 @@
+CREATE TABLE `WISHES` (
+`wishes_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`user_id` INT( 11 ) NULL ,
+`Donations` VARCHAR( 50 ) NULL ,
+`Description` VARCHAR( 200 ) NULL ,
+`Institution` VARCHAR( 50 ) NULL ,
+`friendid` INT( 11 ) NULL
+) ENGINE = MYISAM ;

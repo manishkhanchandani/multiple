@@ -1,0 +1,11 @@
+CREATE TABLE `reminder` (
+`reminder_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`user_id` INT( 11 ) NULL ,
+`Account` VARCHAR( 50 ) NULL ,
+`AccountNo` VARCHAR( 25 ) NULL ,
+`Description` VARCHAR( 200 ) NULL ,
+`Contact` VARCHAR( 50 ) NULL ,
+`Place` VARCHAR( 30 ) NULL ,
+`File` VARCHAR( 40 ) NULL ,
+`friendid` INT( 11 ) NULL
+) ENGINE = MYISAM ;
