@@ -1,0 +1,9 @@
+CREATE TABLE `PersonalInformation` (
+`personal_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`user_id` INT( 11 ) NULL ,
+`Dob` DATE NULL ,
+`Identification` VARCHAR( 100 ) NULL ,
+`BloodGrp` VARCHAR( 15 ) NULL ,
+`Allergy` VARCHAR( 100 ) NULL ,
+`Diasbilities` VARCHAR( 150 ) NULL ,
+`Disease` VARCHAR( 150 ) NULL
