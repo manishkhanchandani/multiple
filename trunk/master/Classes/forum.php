@@ -65,7 +65,7 @@ class forum {
 			}
 			if ( $goOn == 1 )
 			{
-				$this->tree .= "<li class=\"lilinks\"><a href=\"#\" class=\"alinks\">".$nav_row['comment_title'] . "</a></li>";				// Process the main tree node
+				$this->tree .= "<div class=\"lilinks\"><a href=\"#\" class=\"alinks\">".$nav_row['comment_title'] . "</a></div>";				// Process the main tree node
 				array_push($this->exclude, $nav_row['comment_id']);		// Add to the exclusion list
 				$this->tree .= $this->build_child($nav_row['comment_id'], $postId);		// Start the recursive function of building the child tree
 			}
@@ -82,12 +82,13 @@ class forum {
 		{
 			if ( $child['category_id'] != $child['parent_id'] )
 			{
-				$tempTree .= "<li class=\"lilinks\"><a href=\"#\" class=\"alinks\">";
+				$tempTree .= "<div class=\"lilinks\">";
 				for ( $c=0;$c<$this->depth;$c++ )			// Indent over so that there is distinction between levels
 				{ 
 					$tempTree .= "&nbsp;&nbsp;&nbsp;&nbsp;"; 
 				}
-				$tempTree .= "- " . $child['comment_title'] . "</a></li>";
+				$tempTree .= "<a href=\"#\" class=\"alinks\">";
+				$tempTree .= "- " . $child['comment_title'] . "</a></div>";
 				$this->depth++;		// Incriment depth b/c we're building this child's child tree  (complicated yet???)
 				$tempTree .= $this->build_child($child['comment_id'], $postId);		// Add to the temporary local tree
 				$this->depth--;		// Decrement depth b/c we're done building the child's child tree.
