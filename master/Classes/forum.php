@@ -1,7 +1,7 @@
 <?php
 class forum {
 	private static $instance;
-	public function __construct($dbFrameWork, $Common) {
+	public function __construct() {
 		if(self::$instance) {
 			return self::$instance;
 		} else {
@@ -50,7 +50,7 @@ class forum {
 		$this->tempTree = '';		
 		$sql = "select * from forum_comments where parent_id = '".$CatId."' and post_id = '".$postId."'";
 		$nav_query = @mysql_query($sql);
-		if(!$rs) {
+		if(!$nav_query) {
 			throw new Exception(mysql_error());
 		}
 		while($nav_row = mysql_fetch_array($nav_query)) {
@@ -75,7 +75,7 @@ class forum {
 	{			
 		$sql = "SELECT * FROM `forum_comments` WHERE parent_id='" . $oldID . "' and post_id = '".$postId."'";		
 		$child_query = @mysql_query($sql);
-		if(!$rs) {
+		if(!$child_query) {
 			throw new Exception(mysql_error());
 		}
 		while ($child = mysql_fetch_array($child_query))
