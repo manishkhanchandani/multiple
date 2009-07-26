@@ -1,4 +1,4 @@
-<?php require_once('Connections/connection.php'); ?>
+<?php require_once('Connections/conn.php'); ?>
 <?php
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
@@ -40,13 +40,13 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
                        GetSQLValueString($_POST['Email'], "text"),
                        GetSQLValueString($_POST['Name'], "text"));
 
-  mysql_select_db($database_connection, $connection);
-  $Result1 = mysql_query($insertSQL, $connection) or die(mysql_error());
+  mysql_select_db($database_conn, $conn);
+  $Result1 = mysql_query($insertSQL, $conn) or die(mysql_error());
 }
 
-mysql_select_db($database_connection, $connection);
+mysql_select_db($database_conn, $conn);
 $query_Recordsetaddw = "SELECT * FROM wish_lifereminder";
-$Recordsetaddw = mysql_query($query_Recordsetaddw, $connection) or die(mysql_error());
+$Recordsetaddw = mysql_query($query_Recordsetaddw, $conn) or die(mysql_error());
 $row_Recordsetaddw = mysql_fetch_assoc($Recordsetaddw);
 $totalRows_Recordsetaddw = mysql_num_rows($Recordsetaddw);
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -98,16 +98,12 @@ $totalRows_Recordsetaddr = mysql_num_rows($Recordsetaddr);
       <td><input type="text" name="Upload" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right"><span class="style1">Email:</span></td>
-      <td><input type="text" name="Email" value="" size="32"></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right"><span class="style1">Name:</span></td>
-      <td><input type="text" name="Name" value="" size="32"></td>
-    </tr>
-    <tr valign="baseline">
-      <td nowrap align="right"><span class="style1">Phone:</span></td>
-      <td><input type="text" name="Phone" value="" size="32"></td>
+      <td nowrap align="right">Email To: </td>
+      <td><select name="emailto[]" size="5" multiple="multiple" id="emailto[]">
+        <option value="1">FriendA</option>
+        <option value="2">FriendB</option>
+      </select>
+      <a href="#">Add New Friend </a></td>
     </tr>
     <tr valign="baseline">
       <td nowrap align="right">&nbsp;</td>
