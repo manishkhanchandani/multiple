@@ -1,0 +1,9 @@
+CREATE TABLE `advertisment` (
+`advert_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`advert_type` ENUM( 'text', 'image' ) NULL ,
+`advert_title` VARCHAR( 50 ) NULL ,
+`advert_desc` VARCHAR( 250 ) NULL ,
+`advert_postdate` DATETIME NULL ,
+`advert_expdate` INT( 50 ) NULL ,
+`advert_image` VARCHAR( 50 ) NULL
+) ENGINE = MYISAM ;

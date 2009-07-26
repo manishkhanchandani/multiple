@@ -1,0 +1,10 @@
+CREATE TABLE `preadvertisment` (
+`advert_request_id` INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`advert_companyname` VARCHAR( 200 ) NULL ,
+`advert_title` VARCHAR( 150 ) NULL ,
+`advert_image` VARCHAR( 200 ) NULL ,
+`advert_desc` TEXT NULL ,
+`advert_postdate` DATETIME NULL ,
+`advert_expdate` INT( 50 ) NULL ,
+`advert_reqstdate` DATETIME NULL
+) ENGINE = MYISAM ;
