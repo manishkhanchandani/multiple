@@ -7,3 +7,4 @@ CREATE TABLE `PersonalInformation` (
 `Allergy` VARCHAR( 100 ) NULL ,
 `Diasbilities` VARCHAR( 150 ) NULL ,
 `Disease` VARCHAR( 150 ) NULL
+) ENGINE = MYISAM ;
