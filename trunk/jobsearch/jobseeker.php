@@ -21,7 +21,7 @@
     <label>
     <input type="text" name="textfield" />
     </label> 
-    </p>
+  </p>
   <p>Firstname:
     <label>
     <input type="text" name="textfield2" />
@@ -104,7 +104,13 @@
     <input name="file" type="file" size="35" />
     </label>
 </p>
-  <p>OR</p>
+  <p align="left">
+    <label></label>
+    <label>
+    <input type="submit" name="Submit2" value="Upload" />
+    </label>
+  </p>
+  <p align="left">OR</p>
   <p>
     <label>
     <textarea name="textarea2" cols="60" rows="5"></textarea>
