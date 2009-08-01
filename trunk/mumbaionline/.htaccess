@@ -1,0 +1,8 @@
+php_value include_path ".:/usr/share/php5/:/home37b/sub004/sc29722-KLXJ/www/mumbaionline.org.in/library"
+IndexIgnore *
+php_value memory_limit 500M
+php_value post_max_size 50M
+php_value upload_max_filesize 50M
+php_value max_execution_time -1
+php_value zlib.output_compression 16386
+php_value date.timezone Asia/Calcutta
