@@ -1,4 +1,4 @@
-<?php require_once('Connections/conn.php'); ?>
+<?php require_once('../../Connections/conn.php'); ?>
 <?php
 // *** Validate request to login to this site.
 if (!isset($_SESSION)) {
@@ -14,8 +14,8 @@ if (isset($_POST['email'])) {
   $loginUsername=$_POST['email'];
   $password=$_POST['password'];
   $MM_fldUserAuthorization = "role";
-  $MM_redirectLoginSuccess = "login_success.php";
-  $MM_redirectLoginFailed = "login_failure.php";
+  $MM_redirectLoginSuccess = "../myblog/login_success.php";
+  $MM_redirectLoginFailed = "../myblog/login_failure.php";
   $MM_redirecttoReferrer = true;
   mysql_select_db($database_conn, $conn);
   	
