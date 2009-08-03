@@ -1,5 +1,4 @@
-<?php require_once('../Connections/conn.php'); ?>
-<?php
+<?php require_once('../../Connections/conn.php'); ?><?php
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   $theValue = (!get_magic_quotes_gpc()) ? addslashes($theValue) : $theValue;
