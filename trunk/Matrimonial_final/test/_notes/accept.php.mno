@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsAccept" value="name:fid;datatype:int,name:user_id;datatype:int,name:friend_id;datatype:int" />
+</info>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCheck" value="name:invite_id;datatype:int,name:user_id;datatype:int,name:invited_to_id;datatype:int,name:invitation_date;datatype:datetime" />
+	<infoitem key="UD_rsFriendlist" value="name:fid;datatype:int,name:user_id;datatype:int,name:friend_id;datatype:int" />
+</info>
