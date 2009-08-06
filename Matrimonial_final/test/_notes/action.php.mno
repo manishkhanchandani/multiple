@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsPendingFriends" value="name:invite_id;datatype:int,name:user_id;datatype:int,name:invited_to_id;datatype:int,name:invitation_date;datatype:datetime,name:user_id;datatype:int,name:email;datatype:string,name:password;datatype:string,name:name;datatype:string,name:created_dt;datatype:datetime,name:last_login_dt;datatype:datetime,name:role;datatype:string,name:status;datatype:int" />
+</info>
