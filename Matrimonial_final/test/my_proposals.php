@@ -52,15 +52,16 @@ $query_rsPendingProposals = sprintf("SELECT * FROM matrimony_proposal LEFT JOIN 
 $rsPendingProposals = mysql_query($query_rsPendingProposals, $conn) or die(mysql_error());
 $row_rsPendingProposals = mysql_fetch_assoc($rsPendingProposals);
 $totalRows_rsPendingProposals = mysql_num_rows($rsPendingProposals);
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
-</head>
+<title>Untitled Document</title></head>
 
 <body>
-<h3><strong>My Actions</strong></h3>
+<h2><strong>My Actions</strong></h2>
+<p>&nbsp;</p>
 <?php if ($totalRows_rsPendingProposals > 0) { // Show if recordset not empty ?>
   <p><strong>Pending Proposal List </strong></p>
   <table border="1" cellspacing="0" cellpadding="5">
@@ -77,7 +78,12 @@ $totalRows_rsPendingProposals = mysql_num_rows($rsPendingProposals);
       <td><a href="deny.php?proposer_id=<?php echo $row_rsPendingProposals['user_id']; ?>">Deny</a></td>
     </tr>
   </table>
-  <?php } // Show if recordset not empty ?><p>&nbsp;</p>
+  <?php } 
+  else
+  {// Show if recordset not empty ?>
+  <p><h3>You Have No Pending Proposals</h3></p>
+  <?php } ?>
+<p>&nbsp;</p>
 </body>
 </html>
 <?php
